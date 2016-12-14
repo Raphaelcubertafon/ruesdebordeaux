@@ -1,0 +1,27 @@
+<%= form_for(rue) do |f| %>
+  <% if rue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rue.errors.count, "error") %> prohibited this rue from being saved:</h2>
+
+      <ul>
+      <% rue.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rue %>
+    <%= f.text_field :rue %>
+  </div>
+
+  <div class="field">
+    <%= f.label :histoire %>
+    <%= f.text_area :histoire %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

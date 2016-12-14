@@ -1,0 +1,1 @@
+json.array! @rues, partial: 'rues/rue', as: :rue

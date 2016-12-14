@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rues</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rue</th>
+      <th>Histoire</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rues.each do |rue| %>
+      <tr>
+        <td><%= rue.rue %></td>
+        <td><%= rue.histoire %></td>
+        <td><%= link_to 'Show', rue %></td>
+        <td><%= link_to 'Edit', edit_rue_path(rue) %></td>
+        <td><%= link_to 'Destroy', rue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rue', new_rue_path %>
