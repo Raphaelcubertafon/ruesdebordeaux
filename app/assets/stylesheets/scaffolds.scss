@@ -1,17 +1,19 @@
 body {
-  background-color: yellow;
+  background-color: green;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: Avenir, verdana, arial, helvetica, sans-serif;
+  font-size: 20px;
   line-height: 18px;
   margin: 33px;
+  
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: Avenir, verdana, arial, helvetica, sans-serif;
+  font-size: 25px;
   line-height: 18px;
   margin: 10x;
+
 }
 
 pre {
@@ -34,7 +36,13 @@ a {
 }
 
 th {
-  padding-bottom: 5px;
+  
+  color: black;
+  font-family: Avenir, Arial, Helvetica;
+  font-size: 30px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  padding-left: 50px;
 }
 
 td {
@@ -45,7 +53,7 @@ td {
 
 div {
   &.field, &.actions {
-    margin-bottom: 10px;
+    margin-radius: 5px;
   }
 }
 
